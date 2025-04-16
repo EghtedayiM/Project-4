@@ -1,91 +1,138 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>My Portfolio Web Page</title>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <Style>
+            body{
+                background-color: rgb(204, 85, 0);
+                direction: ltr;
+                text-align: left;
+            }
+            table{
+                border-collapse: collapse;
+                border-radius: 30px;
+                background-color: rgb(255, 255, 255, 0.7);
+                width: 95vw;
+                height: 95vh;
+                margin: 2%;
+                text-align: center;
+                column-count: 10;
+            }
 
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            max-width: 800px;
-        }
-        td {
-            border: 1px solid rgb(255, 85, 0);
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: rgb(255, 85, 0);
-            border: 1px solid rgb(255, 85, 0);
-            padding: 8px;
-            text-align: center;
-            color: #ffffff;
-        }
-        p {
-            color: rgb(255, 85, 0);
-        }
-    </style>
-</head>
+            th{
+                color: rgb(204, 85, 0);
+                border-color:rgb(204, 85, 0);
+                padding: 1.5%;
+                text-align: left;
+            }
+            tr{
+                color: rgb(204, 85, 0);
+                border-style: solid;
+                border-color: rgb(204, 85, 0);
+                padding: 1.5%;
+            }
+            td{
+                padding: 0.5%;
+                width: 9.5vw;
+            }
+            .title{
+                color:rgb(204, 85, 0);
+                text-align: right;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 95%;
+            }
+            .photos img, .about-me img{
+                width:150px;
+                border-radius: 10px;
+                padding: 5px;
+            }
 
-<body>
-    <h1>Welcome!</h1>
-    <h2>About me: </h2>
-    <p>Hellow! My name is Motahareh Eghtedahyi and I'm studying in Mahallat University.</p>
-    <h2>My hobbies: </h2>
-    <p>
-        <ul>
-            <li><a href="https://www.kadro.co/pro/ogi">Photography</a></li>
-            <li><a href="https://github.com/EghtedayiM">Coding</a></li>
-            <li><a href="https://www.goodreads.com/user/show/180988616-motahareh-eghtedayi">Reading</a></li>
-            <li>Driving</li>
-        </ul>
-    </p>
+            .visible-alt::after {
+                content: attr(alt);
+                display: block;
+                margin-top: 5px;
+                color: #000000;
+                font-style: italic;
+            }
 
-    <p>... and here is my photo: </p>
-    <img src="img/IMG_20250216_234024_325.jpg" alt="description" width="200">
+            a {
+                text-decoration: none;
+                color: rgb(204, 85, 0);          
+                font-size: 100%;    
+                transition: all 0.3s;  
+            }
 
-<!-- table -->
+            a:hover {
+                font-size: 100%;
+                color: rgb(84, 35, 0);       
+                text-decoration: underline; 
+            }
 
-    <table>
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th>Saturday</th>
-                <th>Sunday</th>
-                <th>Monday</th>
-                <th>Thursday</th>
-                <th>Wednesday</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>9:00 - 10:00</td>
-                <td>Python</td>
-                <td>Python</td>
-                <td>Python</td>
-                <td>Free</td>
-                <td>Free</td>
-            </tr>
-            <tr>
-                <td>10:00 - 11:00</td>
-                <td>OS</td>
-                <td>Painting</td>
-                <td>Painting</td>
-                <td>OS</td>
-                <td>Free</td>
-            </tr>
-            <tr>
-                <td>11:00 - 12:00</td>
-                <td>Free</td>
-                <td>Free</td>
-                <td>Free</td>
-                <td>Free</td>
-                <td>Free</td>
-            </tr>
-        </tbody>
-    </table>
+            a:visited {
+                font-size: 100%;
+                color: rgb(233, 161, 113);
+            }
+
+            a:visited:hover{
+                font-size: 100%;
+                text-decoration: underline;
+                color: rgb(124, 76, 42);
+            }
+            .photo-caption{
+                font-size: 60%;
+                font-style: italic;
+            }
+
+            .icon{
+                font-size: 30px;
+                text-align: right;
+            }
+            .ContactInfo{
+                font-size: 20px;
+                text-align: left;
+                padding: 5%;
+            }
 
 
 
-</body>
-</html>
+        </Style>
+    </head>
+
+    <body>
+
+        <div>
+            <table>
+                <thead>
+                    <tr class="navbar">
+                        <th colspan="1"><a href="index.html">Home</a></th>
+                        <th colspan="1"><a href="About.html">About</a></th>
+                        <th colspan="1"><a href="Contact.html">Contact</a></th>
+                        <th colspan="7"></th>                      
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="icon"><i class="fa">&#xf095;</i></td>
+                        <td colspan="7" class="ContactInfo"> 09226341385</td>
+                        <th colspan="1"> </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="icon"><i class="fa">&#xf16d;</i></td>
+                        <td colspan="7" class="ContactInfo"> @ogiportfolio</td>
+                        <th colspan="1"> </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="icon"><i class="fa">&#xf003;</i></td>
+                        <td colspan="7" class="ContactInfo"> ogi.photography.21@gmail.com</td>
+                        <th colspan="1"> </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+
+    </html>
+
+
+    
